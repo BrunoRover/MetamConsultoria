@@ -1,0 +1,14 @@
+.services-container>h3 {
+    text-align: center;
+    margin-bottom: 38px;
+    margin-top: 42px;
+    font-size: 32px;
+    color: #333;
+}
+
+.services-wrapper {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}

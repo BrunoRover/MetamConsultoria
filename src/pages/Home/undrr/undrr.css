@@ -1,0 +1,158 @@
+.undrr-container {
+    background-color: #111111;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+  
+  .undrr-container > h3 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  .undrr-container > p {
+    color: #c9c9c9;
+    margin: 0 7%;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 15px;
+
+  }
+  
+  .undrr-wrapper {
+    background: linear-gradient(135deg, #111111 0%, #f5760f 40%, #111111 100%);
+    padding: 40px;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .undrr-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .undrr-logo > img {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 450px;  
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  .undrr-logo img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  
+  @media (max-width: 1024px) {
+    .undrr-wrapper {
+      padding: 40px;
+      width: 80%;
+      margin: 0 auto;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+        
+    }
+    .undrr-logo{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+
+    }
+    .undrr-logo > img {
+      border-radius: 10px;
+      width: 100%;
+      max-width: 450px;  
+      height: auto;
+      object-fit: contain;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .undrr-container > p {
+        font-size: 16px;
+        margin: 0 5%;
+    }
+
+    .undrr {
+        max-width: 90%;
+    }
+    .undrr-container > h6 {
+        font-size: 18px;
+        margin: 0 5%;
+    }
+}
+  @media (max-width: 768px) {
+    .undrr-wrapper {
+      width: 90vw;
+    }
+  
+    .undrr-logo {
+      flex-direction: column;
+    }
+  
+    .undrr-logo > img {
+      width: 70%;
+      margin-bottom: 16px;
+    }
+  }
+
+@media (max-width: 480px) {
+  .undrr-wrapper {
+    padding: 30px;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      
+  }
+  .undrr-logo{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+
+  }
+  .undrr-logo > img {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 450px;  
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+    .undrr-container > p {
+      padding-bottom: 20px;
+
+        font-size: 12px;
+        margin: 0 5%;
+    }
+    .undrr-container > h6 {
+        font-size: 18px;
+        margin: 0 5%;
+    }
+    .undrr-container > h3{
+        padding-bottom: 20px;
+        font-size: 16px;
+        margin: 0 5%;
+    }
+}

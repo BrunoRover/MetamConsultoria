@@ -1,0 +1,123 @@
+.ceo-container {
+    margin-top: 60px;
+    padding: 0 5%; 
+}
+
+.ceo-container > h3 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.ceo-wrapper {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.ceo-details {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 600px;
+}
+
+.ceo-detail-head > h6 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+}
+
+.ceo-detail-body > p {
+    color: #5C5C5C;
+    line-height: 1.6;
+    text-align: justify;
+    font-size: 15px;
+
+}
+
+.ceo-images {
+    display: flex;
+    justify-content: center;
+}
+
+.ceo1 {
+    width: 100%;
+    max-width: 400px; 
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+@media (max-width: 1024px) {
+    .ceo-wrapper {
+        flex-direction: column;
+    }
+
+    .ceo-detail-body > p {
+        font-size: 16px;
+        margin: 0 5%;
+    }
+
+    .ceo1 {
+        max-width: 90%;
+    }
+    .ceo-details {
+        order: 1;
+      }
+    
+      .ceo-images {
+        order: 2;
+        margin-top: 20px;
+      }
+}
+@media (max-width: 1024px) {
+    .ceo-wrapper {
+        flex-direction: column;
+    }
+
+    .ceo-detail-body > p {
+        font-size: 16px;
+        margin: 0 5%;
+    }
+
+    .ceo1 {
+        max-width: 90%;
+    }
+    .ceo-detail-head > h6 {
+        font-size: 18px;
+        margin: 0 5%;
+    }
+}
+@media (max-width: 768px) {
+    .ceo-detail-body > p {
+        font-size: 12px;
+        margin: 0 5%;
+    }
+    .ceo-detail-head > h6 {
+        font-size: 18px;
+        margin: 0 5%;
+    }
+    .ceo-container > h3{
+        padding-bottom: 20px;
+        font-size: 24px;
+        margin: 0 5%;
+    }
+}
+@media (max-width: 480px) {
+    .ceo-detail-body > p {
+        font-size: 12px;
+        margin: 0 5%;
+    }
+    .ceo-detail-head > h6 {
+        font-size: 18px;
+        margin: 0 5%;
+    }
+    .ceo-container > h3{
+        padding-bottom: 20px;
+        font-size: 24px;
+        margin: 0 5%;
+    }
+}
