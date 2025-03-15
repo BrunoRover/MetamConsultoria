@@ -2,7 +2,7 @@
 
 Site oficial da empresa: https://metamconsultoria.com/
 
-![Metam Consultoria e Assessoria LTDA](https://github.com/user-attachments/assets/5683f42d-165a-4b69-b588-852336e61cdd)
+![Metam Consultoria e Assessoria LTDA](https://github.com/user-attachments/assets/b1433507-a0b8-4552-b1cd-17fef1ce8a35)
 
 ## Tecnologia
 
