@@ -6,7 +6,7 @@ import image2 from "../../../assets/images/image2.png"
 const Undrr = () => {
   return (
     <div className="undrr-container">
-      <h3>Making Cities Resilient 2030 - U N D R R</h3>
+      <h3>MAKING CITIES RESILIENT 2030 - U N D R R</h3>
       <p>Atualmente, nosso CEO e a empresa estão registrados como especialistas em apoiar a
         reestruturação de estados e municípios no Programa das Nações Unidas para a
         Redução de Riscos em Desastres, alinhando-se aos princípios estabelecidos no Marco

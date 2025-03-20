@@ -5,7 +5,7 @@ import coursesData from "../../../data/courses";
 const Courses = () => {
     return (
         <section className="courses-section" id="courses">
-            <h3>Nossos Cursos</h3>
+            <h3>CURSOS ESPECIALIZADOS</h3>
             <p>Oferecemos treinamentos especializados e personalizados para desenvolver suas habilidades, aprimorar seu desempenho e garantir excelência operacional, proporcionando conhecimento prático e atualizado para enfrentar desafios com confiança e eficiência.</p>
 
             <div className="courses-container">

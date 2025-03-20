@@ -9,7 +9,7 @@ import "./coursePage.css";
 const CoursePage = () => {
     const { courseId } = useParams();
     const course = coursesData.find(c => c.link === `/curso/${courseId}`);
-    const { scrollToElement, openLink, openWhatsApp } = useNavigation();
+    const { scrollToElement, openLink } = useNavigation();
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
     useEffect(() => {
@@ -27,8 +27,6 @@ const CoursePage = () => {
         window.open(url, '_blank');
     };
 
-    let phoneNumber = "5548920029217"
-    let message = "Olá! Gostaria de saber mais informações sobre o curso de " + course.title + "."
 
     return (
         <div>
@@ -57,7 +55,7 @@ const CoursePage = () => {
                             {course.notDefined ? (
                                 <button className="btn primary__btn">Curso em aberto</button>
                             ) :
-                                <button className="btn primary__btn" onClick={() => openLink("https://docs.google.com/forms/d/e/1FAIpQLScCfkh5ViM-_xsOqZRqYu5NwdM3ZL1lZk1R9CPIlqNYiOKNoA/viewform")}>Inscreva-se</button>
+                                <button className="btn primary__btn" onClick={() => scrollToElement("subscribe")}>Inscreva-se</button>
                             }
                             <button className="btn secondary__btn" onClick={() => scrollToElement("about")}>Saiba mais</button>
                         </div>
@@ -153,17 +151,17 @@ const CoursePage = () => {
             </section>
             {
                 course.notDefined ? (
-                    <section className="subscribe">
+                    <section className="subscribe" id="subscribe">
                         <h2>Ficou interessado?</h2>
                         <ModalForm />
                     </section>
                 ) :
-                    <section className="subscribe">
+                    <section className="subscribe" id="subscribe">
                         <h2>Ficou interessado?</h2>
                         <p>Aproveite essa oferta especial e comece sua jornada de aprendizado hoje mesmo!</p>
                         <p className="original-price">De: <span className="strike">{course.price}</span></p>
                         <p className="discounted-price">Por apenas: <strong>{course.promotionalPrice}</strong></p>
-                        <button className="btn primary__btn" onClick={() => handleClick()}>{course.buttonText}</button>
+                        <ModalForm />
                     </section>
 
 

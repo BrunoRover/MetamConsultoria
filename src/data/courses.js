@@ -7,6 +7,10 @@ import dronePage3 from '../assets/images/dronePage3.jpg';
 import aeromedico1 from '../assets/images/aeromedico.jpg';
 import aeromedico2 from '../assets/images/aeromedico1.jpg';
 import aeromedico3 from '../assets/images/aeromedico2.jpg';
+import comissario from '../assets/images/comissários.png';
+import comissario1 from '../assets/images/comissário1.jpg';
+import comissario2 from '../assets/images/comissário2.jpg';
+import comissario3 from '../assets/images/comissário3.jpg';
 import sco from '../assets/images/sco1.jpg';
 import sco1 from '../assets/images/sco2.jpg';
 import sco2 from '../assets/images/sco3.jpg';
@@ -77,7 +81,7 @@ const coursesData = [
         link: "/curso/drone",
         buttonText: "Quero me inscrever",
         phoneMesage: "Olá! Gostaria de saber mais informações sobre o curso de Pilotagem de Drone.",
-        notDefined: true
+        notDefined: false
     },   
     {
         title: "Aeromédico",
@@ -169,7 +173,7 @@ const coursesData = [
         link: "/curso/aeromedico",
         buttonText: "Quero me inscrever",
         phoneMesage: "Olá! Gostaria de saber mais informações sobre o curso de Aeromédicos.",
-        notDefined: true
+        notDefined: false
     },
     {
         title: "Sistema de Comando de Operações (SCo)",
@@ -212,8 +216,97 @@ const coursesData = [
         link: "/curso/sco",
         buttonText: "Quero me inscrever",
         phoneMesage: "Olá! Gostaria de saber mais informações sobre o curso de Sistema de Comando de Operações (SCo).",
-        notDefined: true
+        notDefined: false
+    },
+    {
+        title: "Sobrevivência para Comissários de Bordo",
+        description: "Curso intensivo e prático para capacitar comissários de bordo a lidarem com emergências a bordo, seguindo as normas da ANAC (RBACs 63 e 121).",
+        details: "Este curso presencial atende rigorosamente às exigências da ANAC (RBACs 63 e 121), preparando você para atuar com segurança em situações de emergência a bordo. Com uma abordagem realista e dinâmica, nossos instrutores experientes ensinarão técnicas fundamentais de segurança, evacuação e primeiros socorros, garantindo um treinamento completo e eficaz.",
+        duration: "40 horas presenciais",
+        level: "Iniciante ao Avançado",
+        category: "Segurança e Sobrevivência para Comissários",
+        modality: "Presencial",
+        certification: "Sim, certificação oficial reconhecida nacionalmente",
+        price: "R$ 1.000,00",
+        promotionalPrice: "R$ 900,00",
+        instructor: [
+            {
+                name: "Moura",
+                bio: "Coordenador Geral e Instrutor do Curso, especialista em segurança operacional e gerenciamento de crises.",
+                image: moura
+            }
+        ],
+        startDates: ["04/06/2025"],
+        location: "Tijucas - SC",
+        prerequisites: ["Experiência em gestão de operações ou segurança"],
+        targetAudience: "Comissários de bordo, Corpo de Bombeiros, Polícia Militar, Defesa Civil, Forças Armadas e profissionais da aviação.",
+        teachingMaterial: "Material didático impresso e digital incluso",
+        schedule: [
+            {
+                dia: "04/06",
+                tipo: "AULA TEÓRICA",
+                descricao: "Início às 8h, término às 17h30 - Tijucas - SC",
+                intervalo: "Intervalo de 1h para almoço",
+                right: "No primeiro dia do curso, os participantes terão uma introdução teórica sobre segurança e sobrevivência a bordo, cobrindo normas da ANAC (RBACs 63 e 121), procedimentos de evacuação e uso de equipamentos de emergência.",
+            },
+            {
+                dia: "05/06",
+                tipo: "AULA TEÓRICA",
+                descricao: "Início às 8h, término às 17h30 - Tijucas - SC",
+                intervalo: "Intervalo de 1h para almoço",
+                right: "A parte teórica continua no segundo dia, abordando primeiros socorros, combate a incêndios a bordo e gerenciamento de crises. O conteúdo será reforçado com estudos de caso e simulações em ambiente controlado.",
+            },
+            {
+                dia: "06/06",
+                tipo: "AULA PRÁTICA - TREINAMENTO EM ÁGUA",
+                descricao: "Treinamento de Sobrevivência Aquática",
+                intervalo: "Início às 8h, término às 12h",
+                right: "No último dia do curso, os participantes realizarão um treinamento prático de sobrevivência aquática, incluindo técnicas de flutuação, uso correto de coletes salva-vidas e resgate em situações de emergência aérea.",
+            }
+        ],
+        
+        whyChoose: [
+            "Treinamento baseado em casos reais de grandes operações, proporcionando aprendizado prático. ",
+            "Desenvolvimento de habilidades essenciais para liderança eficaz em situações desafiadoras. ",
+            "Aulas conduzidas por especialistas renomados em segurança e gerenciamento de crises. ",
+            "Certificação reconhecida que agrega valor significativo ao seu currículo e carreira. "
+        ],
+        faqs: [
+            {
+                question: "O curso é reconhecido pela ANAC?",
+                answer: "Sim, o curso segue as exigências da ANAC (RBACs 63 e 121), garantindo qualidade e conformidade com as normas da aviação."
+            },
+            {
+                question: "Há suporte pós-curso?",
+                answer: "Sim, oferecemos suporte para dúvidas e orientações sobre certificação e oportunidades na área."
+            },
+            {
+                question: "Posso parcelar o valor do curso?",
+                answer: "Sim, aceitamos pagamento parcelado no cartão de crédito. Consulte as condições no momento da inscrição."
+            }
+        ],
+        testimonials: [
+            {
+                name: "Carla Mendes",
+                comment: "O curso foi essencial para minha carreira. As simulações realistas me ajudaram a me sentir mais preparada."
+            },
+            {
+                name: "Roberto Souza",
+                comment: "Excelente conteúdo e instrutores altamente capacitados. Recomendo a todos da área."
+            },
+            {
+                name: "Juliana Alves",
+                comment: "Um curso completo e dinâmico. As simulações foram o ponto alto do aprendizado."
+            }
+        ],
+        image: comissario,
+        imagePage: [comissario1, comissario2, comissario3],
+        link: "/curso/comissario",
+        buttonText: "Quero me inscrever",
+        phoneMessage: "Olá! Gostaria de saber mais informações sobre o curso de Sobrevivência para Comissários de Bordo.",
+        notDefined: false
     }
+    
 ];
 
 export default coursesData;

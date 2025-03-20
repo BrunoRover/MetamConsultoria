@@ -5,7 +5,7 @@ const Resources = () => {
 
     return (
         <div className="resources-section" id="resources">
-            <h3>Recursos</h3>
+            <h3>RECURSOS</h3>
             <p>
                 A equipe de especialistas é composta por um grupo multidisciplinar, abrangendo os
                 seguintes profissionais: Gestor de Riscos e Desastres, Técnicos em Pilotagem e

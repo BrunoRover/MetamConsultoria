@@ -43,6 +43,8 @@ input[type="number"] {
     border-radius: 0;
 }
 
+
+
 .curso {
     border: none;
     background: none;
@@ -241,7 +243,6 @@ input[type="number"] {
 
     .modal-form .input-box {
         width: 100%;
-        /* Um input por linha em telas menores */
     }
 
     .modal-form .form-header h1 {
@@ -249,7 +250,6 @@ input[type="number"] {
     }
 }
 
-/* Responsividade para celulares */
 @media screen and (max-width: 480px) {
     .modal-form .container-form {
         width: 100%;

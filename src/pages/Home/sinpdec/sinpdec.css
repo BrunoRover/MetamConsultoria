@@ -1,0 +1,82 @@
+.sinpdec-container {
+    background: linear-gradient(135deg, #111111 5%, #f5760f 40%, #111111 95%);
+    padding: 80px 5%;
+    position: relative;
+}
+
+.sinpdec-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sinpdec-details {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 500px;
+    color: #fff;
+}
+
+.sinpdec-detail-head>h6 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.sinpdec-detail-body>p {
+    color: #f1f1f1;
+    line-height: 1.6;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.sinpdec-images {
+    display: flex;
+    justify-content: center;
+}
+
+.sinpdec1 {
+    width: 100%;
+    max-width: 350px;
+    object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+    .sinpdec-wrapper {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    .sinpdec1 {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .sinpdec-detail-body>p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sinpdec-container {
+        text-align: center;
+        padding: 40px 30px;
+    }
+
+    .sinpdec-detail-head>h6 {
+        font-size: 22px;
+    }
+
+    .sinpdec-detail-body>p {
+        font-size: 14px;
+    }
+
+    .sinpdec-wrapper {
+        gap: 30px;
+    }
+}

@@ -3,7 +3,7 @@ import "./strategicActions.css";
 const StrategicActions = () => {
     return (
         <div className="strategic-actions" id="strategic-actions">
-            <h3>Ações Estratégicas</h3>
+            <h3>AÇÕES ESTRATÉGICAS</h3>
             <p>
                 Fundamentamos nosso trabalho em quatro objetivos estratégicos essenciais, com foco em
                 oferecer soluções eficazes e adaptadas à realidade de cada região ou empresa. Nosso compromisso

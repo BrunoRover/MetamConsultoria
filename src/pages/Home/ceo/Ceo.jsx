@@ -13,7 +13,7 @@ const Ceo = () => {
 
                 <div className="ceo-details">
                     <div className="ceo-detail-head">
-                        <h6>CEO da Metam</h6>
+                        <h6>CEO DA METAM</h6>
                     </div>
                     <div className="ceo-detail-body">
                         <p>Kleber de Moura é um profissional com 20 anos de experiência

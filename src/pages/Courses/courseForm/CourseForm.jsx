@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
+import useToast from "../../../hooks/useToast";
 import coursesData from "../../../data/courses";
 import emailjs from "@emailjs/browser";
 import img from "../../../assets/images/banner2.jpg";
@@ -7,6 +8,7 @@ import "./modalForm.css";
 
 export default function ModalForm() {
     const { courseId } = useParams();
+    const { showToast } = useToast();
     const [paymentMethod, setPaymentMethod] = useState("");
     const [atividade, setAtividade] = useState("");
     const [possuiDrone, setPossuiDrone] = useState("");
@@ -40,12 +42,13 @@ export default function ModalForm() {
         e.preventDefault();
 
         emailjs.sendForm("service_rq0rtt2", "template_72yszbe", formRef.current, "wVOr-7Q-6wdbPQ8ly")
-            .then((result) => {
-                alert("Email enviado com sucesso!");
+            .then(() => {
+                showToast("E-mail enviado com sucesso!", "success");
                 e.target.reset();
                 setIsOpen(false);
-            }, (error) => {
-                alert("Erro ao enviar email. Tente novamente mais tarde.");
+            })
+            .catch(() => {
+                showToast("Ocorreu um erro ao enviar o e-mail.", "error");
             });
 
     };
@@ -71,7 +74,7 @@ export default function ModalForm() {
                                 <div className="form-header">
                                     <div className="title">
                                         <h1>Inscreva-se</h1>
-                                        <input className="curso" id="valor" name="curso" value={course.title} readOnly />
+                                        <input className="curso" id="curso" name="curso" value={course.title} readOnly />
 
                                     </div>
                                     <div className="form-button">

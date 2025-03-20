@@ -11,6 +11,7 @@ import Courses from '../pages/Courses/courses/Courses';
 import WhatsappButton from '../components/btn-wpp/WhatsappButton';
 import MaintenancePage from '../components/maintenancePage/MaintenancePage';
 import CoursePage from '../pages/Courses/coursePage/CoursePage';
+import Sinpdec from '../pages/Home/sinpdec/Sinpdec';
 
 
 function AppRoutes() {
@@ -27,6 +28,7 @@ function AppRoutes() {
                         <Enterprise />
                         <Ceo />
                         <Undrr />
+                        <Sinpdec />
                         <Services />
                         <Resources />
                         <StrategicActions />

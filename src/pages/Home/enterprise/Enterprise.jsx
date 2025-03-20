@@ -5,13 +5,13 @@ import enterprise1 from "../../../assets/images/enterprise.png"
 const Enterprise = () => {
     return (
         <div className="enterprise-container" id="about">
-            <h3>Metam Consultoria e Assessoria LTDA</h3>
+            <h3>METAM CONSULTORIA E ASSESSORIA LTDA</h3>
 
             <div className="enterprise-wrapper">
 
                 <div className="enterprise-details">
                     <div className="enterprise-detail-head">
-                        <h6>Sobre</h6>
+                        <h6>SOBRE</h6>
                     </div>
                     <div className="enterprise-detail-body" >
                         <p>A Metam Consultoria e Assessoria Ltda, com sede em
