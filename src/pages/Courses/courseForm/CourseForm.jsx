@@ -4,6 +4,7 @@ import useToast from "../../../hooks/useToast";
 import coursesData from "../../../data/courses";
 import emailjs from "@emailjs/browser";
 import img from "../../../assets/images/banner2.jpg";
+import useFormValidation from "../../../hooks/useFormValidation";
 import "./modalForm.css";
 
 export default function ModalForm() {
@@ -38,8 +39,15 @@ export default function ModalForm() {
     }, [courseId]);
 
     const formRef = useRef();
+
+    const { validateForm } = useFormValidation(formRef, course, showToast);
+
     const sendEmail = (e) => {
         e.preventDefault();
+
+        if (!validateForm()) {
+            return;
+        }
 
         emailjs.sendForm("service_rq0rtt2", "template_72yszbe", formRef.current, "wVOr-7Q-6wdbPQ8ly")
             .then(() => {
@@ -50,10 +58,14 @@ export default function ModalForm() {
             .catch(() => {
                 showToast("Ocorreu um erro ao enviar o e-mail.", "error");
             });
-
     };
 
     if (!course) return <div>Curso não encontrado</div>;
+
+    if (course.title.length > 20) {
+        course.title = course.title.substring(0, 20) + "...";
+    }
+
 
     return (
         <>
@@ -75,7 +87,6 @@ export default function ModalForm() {
                                     <div className="title">
                                         <h1>Inscreva-se</h1>
                                         <input className="curso" id="curso" name="curso" value={course.title} readOnly />
-
                                     </div>
                                     <div className="form-button">
                                         <button type="button" onClick={() => setIsOpen(false)}>X</button>
@@ -90,7 +101,7 @@ export default function ModalForm() {
 
                                     <div className="input-box">
                                         <label htmlFor="cpf">CPF</label>
-                                        <input id="cpf" type="text" name="cpf" placeholder="Digite seu CPF" required />
+                                        <input id="cpf" type="text" name="cpf" placeholder="xxx.xxx.xxx-xx" required />
                                     </div>
 
                                     <div className="input-box">
@@ -154,7 +165,6 @@ export default function ModalForm() {
                                             <input id="coren" type="text" name="coren" placeholder="Digite o número do COREN" required />
                                         </div>
                                     )}
-
 
                                     <div className="input-box">
                                         <label htmlFor="pagamento">Forma de Pagamento</label>
